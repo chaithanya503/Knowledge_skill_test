@@ -1,0 +1,22 @@
+SECTION 1: GIT
+1.if you using git stash, where will it save data? What is diff b/w index and staging area?
+
+	All are stored in .git/refs/stash. git stash saves stashes indefinitely, and all of them are listed by git stash list.
+
+2.when would individuals use git rebase, git fast-forward, or a git fetch then push?  
+
+	We need to synchronize -- fetch and rebase our commits on top of what we fetched
+
+3.How to revert already pushed changes ?
+
+	If we want to revert the last commit just do git revert <unwanted commit hash> 
+
+4.What is the difference between cherry picking commits vs trying a hard reset. What is the outcome of the head reference? 
+
+	Git reset is mostly used to undo the local commits or failed git pull/merge. It is also used to clear the mess from the working tree.
+
+	Cherry-picking is done to merge a commit, which belongs to another branch, to currently checked-out branch.
+
+5.Explain the difference between git remote and git clone?
+
+	git remote is used to refer to a remote repository or our central repository. git clone is used to copy or clone a different repository.
